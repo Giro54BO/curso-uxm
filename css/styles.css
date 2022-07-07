@@ -2192,6 +2192,12 @@ progress {
   color: #6c757d;
 }
 
+.text-amarillo {
+
+  color: #FDEE17;
+
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -11734,10 +11740,10 @@ background: linear-gradient(360deg, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 1
 
 .linear-azul {
   background: rgb(255,255,255);
-  background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,211,246,1) 35%, rgba(255,137,86,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,211,246,1) 35%, rgba(255,137,86,1) 100%);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,211,246,1) 35%, rgba(255,137,86,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ff8956",GradientType=1);
+  background: -moz-linear-gradient(151deg, rgba(255,255,255,1) 0%, rgba(0,211,246,1) 100%);
+  background: -webkit-linear-gradient(151deg, rgba(255,255,255,1) 0%, rgba(0,211,246,1) 100%);
+  background: linear-gradient(151deg, rgba(255,255,255,1) 0%, rgba(0,211,246,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#00d3f6",GradientType=1);
 }
 
 
