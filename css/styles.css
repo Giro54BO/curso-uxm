@@ -11563,7 +11563,7 @@ footer a:hover, footer a:active, footer a:focus {
 .masthead {
   background-color: white;
   background-image: url('/images/Section-1-bkgrd.svg');
-  image-width: auto;
+  max-width: auto;
   background-repeat: no-repeat;
   padding-top: 9.5rem;
   padding-bottom: 5rem;
