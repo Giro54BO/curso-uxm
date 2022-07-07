@@ -11715,7 +11715,7 @@ background: -moz-radial-gradient(circle, rgba(253,238,23,1) 0%, rgba(255,255,255
 background: -webkit-radial-gradient(circle, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 41%, rgba(255,255,255,1) 100%);
 background: radial-gradient(circle, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 41%, rgba(255,255,255,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdee17",endColorstr="#ffffff",GradientType=1);
-background-position: left top;
+background-position: top;
 
 }
 
