@@ -11709,15 +11709,7 @@ footer a:hover, footer a:active, footer a:focus {
 	line-height: 2;
 }
 
-/* Image of Instructors Facilitadores */
-
-.img-facilitadores {  
-  max-width: 15%;  
-  height: 15%;
-  border-radius: 100%;  
-  }
-
-
+ 
 /*! Background Colors */
 
 .radial-amarillo {
@@ -11731,10 +11723,20 @@ background-position: top;
 
 }
 
-.linear-amarillo {
+.linear-amarillo-bottom {
 
 background: rgb(253,238,23);
 background: linear-gradient(360deg, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 100%);
+
+}
+
+.linear-amarillo-left {
+
+  background: rgb(253,238,23);
+  background: -moz-linear-gradient(7deg, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 70%);
+  background: -webkit-linear-gradient(7deg, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 70%);
+  background: linear-gradient(7deg, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 70%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdee17",endColorstr="#ffffff",GradientType=1);
 
 }
 
@@ -11773,3 +11775,7 @@ background: linear-gradient(360deg, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 1
 
   }
 
+  .icon-blue {
+    color: #00D3F6;
+ 
+  }
