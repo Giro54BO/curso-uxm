@@ -33,8 +33,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Reseting form after submitting
 window.onbeforeunload = () => {
     for(const form of document.getElementsByTagName('form')) {
       form.reset();
     }
-  }
+}

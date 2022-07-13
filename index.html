@@ -47,13 +47,14 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#CONTACTANOS">CONTÁCTANOS</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#PREGUNTAS">PREGUNTAS</a></li>
                 </ul>
-                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
-                    data-bs-target="#feedbackModal">
-                    <span class="d-flex align-items-center">
+                <a href="pago.html">
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" <span
+                        class="d-flex align-items-center">
                         <span class="small">INSCRIBIRME&nbsp;&nbsp;</span>
                         <i class="bi-arrow-right me-2"></i>
-                    </span>
-                </button>
+                        </span>
+                    </button>
+                </a>
             </div>
         </div>
     </nav>
@@ -64,32 +65,36 @@
                 <div class="col-lg-6">
                     <!-- Mashead Text -->
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 class="pb-1">UXM</h1>
-                        <h2 class="mb-1">Gestión de Proyecto de UX</h2>
+                        <h1 class="pb-1">UX Management</h1>
+                        <h2 class="mb-1">Gestión de Proyectos de UX</h2>
                         <h5 class="mb-3">Programa de capacitación online y ¡en español!</h5>
-                        <h2 class="fw-light">Del XX/08 al XX/09 2022</h2>
-                        <p class="lead fw-light text-body mb-3">Este un programa certificado por Giro54, la Universidad
-                            Privada de Santa Cruz de la Sierra y Aprende UX.</p>
+                        <h2 class="fw-light">Del 15-ago al 09-sep</h2>
+                        <p class="lead fw-light text-body mb-3">Este es un programa internacional certificado por
+                            Giro54, la Universidad Privada de Santa Cruz de la Sierra UPSA y Aprende UX de México.</p>
 
 
 
                         <!-- Buttons Visible only on large screens START -->
                         <div
                             class="d-flex flex-column flex-lg-row align-items-center d-none d-md-block d-lg-block d-xl-block d-xs-none d-sm-none">
+                            <a href="pago.html">
+                                <button type="button" class="btn btn-primary rounded-pill me-3 mb-2 mb-lg-0 px-4">
+                                    <span class="d-flex align-items-center">
+                                        <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
+                                        <i class="bi-arrow-right me-2"></i>
+                                    </span>
+                                </button>
+                            </a>
 
-                            <button class="btn btn-primary rounded-pill me-3 mb-2 mb-lg-0 px-4">
-                                <span class="d-flex align-items-center">
-                                    <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
-                                    <i class="bi-arrow-right me-2"></i>
+                            <button type="button" href="/images/Giro54_Brochure Programa UXM.pdf" target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-secondary rounded-pill  lg-px-3 md-px-3 my-lg-4  mb-md-2 px-4">
+                                <span class="d-flex align-items-center" download>
+                                    <span>Ver programa completo&nbsp;&nbsp;&nbsp;</span>
+                                    <i class="bi-book"></i>
                                 </span>
                             </button>
 
-                            <button class="btn btn-secondary rounded-pill  lg-px-3 md-px-3 my-lg-4  mb-md-2 px-4">
-                                <span class="d-flex align-items-center">
-                                    <span>Descargar el brochure!&nbsp;&nbsp;</span>
-                                    <i class="bi-download me-2"></i>
-                                </span>
-                            </button>
                         </div>
                         <!-- Buttons Visible only on large screens END -->
 
@@ -97,19 +102,24 @@
                         <div
                             class="row pt-5 align-items-center align-self-center d-sm-block d-xs-block d-md-none d-lg-none d-xl-none">
 
-                            <button type="button" class="btn btn-primary btn-block rounded-pill me-3 mb-4 mb-lg-0">
+                            <button href="pago.html" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-primary btn-block rounded-pill mb-4 mb-lg-0">
                                 <span class="align-items-center">
                                     <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
-                                    <i class="bi-arrow-right me-2"></i>
+                                    <i class="bi-arrow-right"></i>
                                 </span>
                             </button>
-                            <button type="button"
-                                class="btn btn-secondary btn-block rounded-pill mb-2 lg-px-3 md-px-3 mb-lg-0">
+
+
+                            <button type="button" href="/images/Giro54_Brochure Programa UXM.pdf" target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-secondary btn-block rounded-pill mb-2 lg-px-3 md-px-3 mb-lg-0" download>
                                 <span>
-                                    <span>Descargar el brochure!&nbsp;&nbsp;</span>
-                                    <i class="bi-download me-2"></i>
+                                    <span>Ver programa completo&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    <i class="bi-book"></i>
                                 </span>
                             </button>
+
                         </div>
                         <!-- Buttons Visible only on small screens full width block buttons END -->
 
@@ -147,9 +157,21 @@
                                 <span class="h6">Clases en vivo</span>
                                 </br>
 
-                                <span class="fw-normal">1 vez a la semana</span>
+                                <span class="fw-normal">2 veces a la semana</span>
 
                             </span>
+                        </div>
+
+                        <div class="d-flex col p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#00D3F6"
+                                class="bi bi-play-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                <path
+                                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                            </svg>
+                            <span class="px-3"><span class="h6">Sesiones grabadas</span></br> <span
+                                    class="fw-normal">Acceso por un año
+                                </span></span>
                         </div>
 
                         <div class="d-flex col p-3">
@@ -179,19 +201,6 @@
                                     class="fw-normal">¡Para
                                     que despejes tus
                                     dudas!</span></p>
-                        </div>
-
-                        <div class="d-flex col p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#00D3F6"
-                                class="bi bi-play-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                <path
-                                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-                            </svg>
-                            <span class="px-3"><span class="h6">Sesiones grabadas</span></br> <span
-                                    class="fw-normal">Acceso a
-                                    sesiones grabadas por un año
-                                </span></span>
                         </div>
 
                     </div>
@@ -294,7 +303,7 @@
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span class="fw-bold">Workshop de diseño</span>
+                                    <span class="fw-bold">Módulo 4: Workshop de diseño</span>
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
@@ -310,49 +319,49 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Buttons Visible only on large screens START -->
-                        <div
-                            class="d-flex flex-column flex-lg-row align-items-center d-none d-md-block d-lg-block d-xl-block d-xs-none d-sm-none">
-
-                            <button class="btn btn-primary-2 rounded-pill me-3 mb-lg-0 px-4">
-                                <span class="d-flex align-items-center">
-                                    <span>Ver programa completo&nbsp;&nbsp;</span>
-                                    <i class="bi-book me-2"></i>
-                                </span>
-                            </button>
-
-                            <button class="btn btn-secondary rounded-pill mb-2 lg-px-3 md-px-3 my-lg-4  mb-md-2 px-4">
-                                <span class="d-flex align-items-center">
-                                    <span>Descargar el brochure!&nbsp;&nbsp;</span>
-                                    <i class="bi-download me-2"></i>
-                                </span>
-                            </button>
-                        </div>
-                        <!-- Buttons Visible only on large screens END -->
-
-                        <!-- Buttons Visible only on small screens full width block buttons START -->
-                        <div
-                            class="row pt-5 align-items-center align-self-center d-sm-block d-xs-block d-md-none d-lg-none d-xl-none">
-
-                            <button type="button" class="btn btn-primary-2 btn-block rounded-pill  me-3 mb-4 mb-lg-0">
-                                <span class="align-items-center">
-                                    <span>Ver programa completo&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                    <i class="bi-book me-2"></i>
-                                </span>
-                            </button>
-
-                            <button type="button"
-                                class="btn btn-secondary btn-block rounded-pill lg-px-3 md-px-3 mb-2 mb-lg-0">
-                                <span>
-                                    <span>Descargar el brochure!&nbsp;&nbsp;</span>
-                                    <i class="bi-download me-2"></i>
-                                </span>
-                            </button>
-                        </div>
-                        <!-- Buttons Visible only on small screens full width block buttons END -->
-
                     </div>
+                    <!-- Buttons Visible only on large screens START -->
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-center d-none d-md-block d-lg-block d-xl-block d-xs-none d-sm-none">
+                        <a href="pago.html">
+                            <button class="btn btn-primary-2 rounded-pill  me-3 lg-px-3 md-px-3 my-lg-4  mb-md-2 px-5"
+                                data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                                <span class="d-flex align-items-center">
+                                    <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
+                                    <i class="bi-arrow-right me-2"></i>
+                                </span>
+                            </button>
+                        </a>
+
+                        <button class="btn btn-secondary rounded-pill mb-2 lg-px-3 md-px-3 my-lg-4  mb-md-2 px-4">
+                            <span class="d-flex align-items-center">
+                                <span>Ver programa completo&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <i class="bi-book"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Buttons Visible only on large screens END -->
+
+                    <!-- Buttons Visible only on small screens full width block buttons START -->
+                    <div
+                        class="row pt-5 align-items-center align-self-center d-sm-block d-xs-block d-md-none d-lg-none d-xl-none">
+
+                        <button type="button" class="btn btn-primary-2 btn-block rounded-pill  me-3 mb-4 mb-lg-0">
+                            <span class="align-items-center">
+                                <span>Ver programa completo&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <i class="bi-book me-2"></i>
+                            </span>
+                        </button>
+
+                        <button type="button"
+                            class="btn btn-secondary btn-block rounded-pill lg-px-3 md-px-3 mb-2 mb-lg-0">
+                            <span>
+                                <span>Descargar el brochure!&nbsp;&nbsp;</span>
+                                <i class="bi-download me-2"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- Buttons Visible only on small screens full width block buttons END -->
                 </div>
             </div>
     </section>
@@ -678,28 +687,34 @@
                         <!-- Buttons Visible only on large screens START -->
                         <div
                             class="d-flex flex-column flex-lg-row align-items-center d-none d-md-block d-lg-block d-xl-block d-xs-none d-sm-none">
-                            <button class="btn btn-primary-2 rounded-pill  me-3 lg-px-3 md-px-3 my-lg-4  mb-md-2 px-5"
-                                data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                                <span class="d-flex align-items-center">
-                                    <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
-                                    <i class="bi-arrow-right me-2"></i>
-                                </span>
-                            </button>
+                            <a href="pago.html">
+                                <button
+                                    class="btn btn-primary-2 rounded-pill  me-3 lg-px-3 md-px-3 my-lg-4  mb-md-2 px-5"
+                                    data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                                    <span class="d-flex align-items-center">
+                                        <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
+                                        <i class="bi-arrow-right me-2"></i>
+                                    </span>
+                                </button>
+                            </a>
                         </div>
                         <!-- Buttons Visible only on large screens END -->
 
                         <!-- Buttons Visible only on small screens full width block buttons START -->
                         <div
                             class="row pt-5 align-items-center align-self-center d-sm-block d-xs-block d-md-none d-lg-none d-xl-none">
-                            <button type="button"
-                                class="btn btn-primary-2 btn-block rounded-pill  me-3 lg-px-3 md-px-3 mb-4 mb-lg-0"
-                                data-bs-toggle="modal" data-bs-target="#feedbackModal">
-                                <span>
-                                    <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
-                                    <i class="bi-arrow-right me-2"></i>
-                                </span>
-                            </button>
+                            <a href="pago.html">
+                                <button type="button"
+                                    class="btn btn-primary-2 btn-block rounded-pill  me-3 lg-px-3 md-px-3 mb-4 mb-lg-0"
+                                    data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                                    <span>
+                                        <span>¡Inscribirme al curso ahora!&nbsp;&nbsp;</span>
+                                        <i class="bi-arrow-right me-2"></i>
+                                    </span>
+                                </button>
+                            </a>
                         </div>
+
                         <!-- Buttons Visible only on small screens full width block buttons END -->
                     </div>
                 </div>
@@ -715,7 +730,7 @@
 
     </section>
 
-    <!--Precio - START-->
+    <!--Precio - END-->
 
     <!-- Capacitamos a tu equipo START-->
     <section class="grey-bkgrd">
@@ -790,7 +805,7 @@
 
                 <!-- Contact Form START -->
                 <div class="col-lg-6">
-                    <form action="https://formspree.io/f/xgedjpze" method="post">
+                    <form action="https://formspree.io/f/xdobrjjw" method="post">
                         <!--Lenguaje de mensaje de confirmacion -->
                         <input type="hidden" name="_language" value="es" />
 
@@ -869,7 +884,7 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body fw-light">
                                     ¡Para nada! Solo tu interés en aprender. Empezaremos por lo básico y a medida que
-                                    nos adentremos en el contenido vas a recibir información cada vez más especializada.
+                                    nos adentramos en el contenido vas a recibir información cada vez más especializada.
                                     Si ya tienes conocimientos previos de UX probablemente puedas aprovechar mejor el
                                     contenido.
                                 </div>
@@ -1058,7 +1073,6 @@
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-
 
 </body>
 
