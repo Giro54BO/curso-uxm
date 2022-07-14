@@ -27,6 +27,75 @@
         rel="stylesheet" />
     <!-- My CSS Stylesheet-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!--PAYPAL-->
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AQCNQ5PWIoJNZi-GpU_uAao_RRA9HG0xc0rhFmzs-bJtBxZt0p4nN0oNgd-7PHaPcZbSIp2kSVJflqzS"></script>
+    <!-- Sample PayPal credentials (client-id) are included -->
+
+    <script>
+        const fundingSources = [
+            paypal.FUNDING.PAYPAL,
+            paypal.FUNDING.CARD
+        ]
+
+        for (const fundingSource of fundingSources) {
+            const paypalButtonsComponent = paypal.Buttons({
+                fundingSource: fundingSource,
+
+                // optional styling for buttons
+                // https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/
+                style: {
+                    shape: 'rect',
+                    height: 40,
+                },
+
+                // set up the transaction
+                createOrder: (data, actions) => {
+                    // pass in any options from the v2 orders create call:
+                    // https://developer.paypal.com/api/orders/v2/#orders-create-request-body
+                    const createOrderPayload = {
+                        purchase_units: [
+                            {
+                                amount: {
+                                    value: '1.00',
+                                },
+                            },
+                        ],
+                    }
+
+                    return actions.order.create(createOrderPayload)
+                },
+
+                // finalize the transaction
+                onApprove: (data, actions) => {
+                    const captureOrderHandler = (details) => {
+                        const payerName = details.payer.name.given_name
+                        console.log('Transaction completed!')
+                    }
+
+                    return actions.order.capture().then(captureOrderHandler)
+                },
+
+                // handle unrecoverable errors
+                onError: (err) => {
+                    console.error(
+                        'An error prevented the buyer from checking out with PayPal',
+                    )
+                },
+            })
+
+            if (paypalButtonsComponent.isEligible()) {
+                paypalButtonsComponent
+                    .render('#paypal-button-container')
+                    .catch((err) => {
+                        console.error('PayPal Buttons failed to render')
+                    })
+            } else {
+                console.log('The funding source is ineligible')
+            }
+        }
+    </script>
+
 </head>
 
 <body class="linear-amarillo-top">
@@ -165,6 +234,7 @@
                                             <div id="paypal-button-container"></div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
 
@@ -318,77 +388,6 @@
     <!-- Footer END-->
 
 
-    <!-- Sample PayPal credentials (client-id) are included -->
-    <script
-        src="https://www.paypal.com/sdk/js?client-id=AQCNQ5PWIoJNZi-GpU_uAao_RRA9HG0xc0rhFmzs-bJtBxZt0p4nN0oNgd-7PHaPcZbSIp2kSVJflqzS&currency=USD&intent=capture"
-        data_source="integrationbuilder"></script>
-
-    <script>
-        const fundingSources = [
-            paypal.FUNDING.PAYPAL,
-            paypal.FUNDING.CARD
-        ]
-
-        for (const fundingSource of fundingSources) {
-            const paypalButtonsComponent = paypal.Buttons({
-                fundingSource: fundingSource,
-
-                // optional styling for buttons
-                // https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/
-                style: {
-                    shape: 'rect',
-                    height: 40,
-                },
-
-                // set up the transaction
-                createOrder: (data, actions) => {
-                    // pass in any options from the v2 orders create call:
-                    // https://developer.paypal.com/api/orders/v2/#orders-create-request-body
-                    const createOrderPayload = {
-                        purchase_units: [
-                            {
-                                amount: {
-                                    value: '1.00',
-                                },
-                            },
-                        ],
-                    }
-
-                    return actions.order.create(createOrderPayload)
-                },
-
-                // finalize the transaction
-                onApprove: (data, actions) => {
-                    const captureOrderHandler = (details) => {
-                        const payerName = details.payer.name.given_name
-                        console.log('Transaction completed!')
-                    }
-
-                    return actions.order.capture().then(captureOrderHandler)
-                },
-
-                // handle unrecoverable errors
-                onError: (err) => {
-                    console.error(
-                        'An error prevented the buyer from checking out with PayPal',
-                    )
-                },
-            })
-
-            if (paypalButtonsComponent.isEligible()) {
-                paypalButtonsComponent
-                    .render('#paypal-button-container')
-                    .catch((err) => {
-                        console.error('PayPal Buttons failed to render')
-                    })
-            } else {
-                console.log('The funding source is ineligible')
-            }
-        }
-    </script>
-
-
-
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -396,9 +395,54 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * *                               PayPal                               * *-->
+    <!-- * * _______________________________________________________________________ * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://www.paypal.com/sdk/js?client-id=test&enable-funding=venmo&currency=USD"
+        data-sdk-integration-source="button-factory"></script>
+    <script>
+        function initPayPalButton() {
+            paypal.Buttons({
+                style: {
+                    shape: 'rect',
+                    color: 'gold',
+                    layout: 'vertical',
+                    label: 'paypal',
+
+                },
+
+                createOrder: function (data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{ "amount": { "currency_code": "USD", "value": 1 } }]
+                    });
+                },
+
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (orderData) {
+
+                        // Full available details
+                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                        // Show a success message within this page, e.g.
+                        const element = document.getElementById('paypal-button-container');
+                        element.innerHTML = '';
+                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+                        // Or go to another URL:  actions.redirect('thank_you.html');
+
+                    });
+                },
+
+                onError: function (err) {
+                    console.log(err);
+                }
+            }).render('#paypal-button-container');
+        }
+        initPayPalButton();
+    </script>
+
+
+
 </body>
 
 </html>
