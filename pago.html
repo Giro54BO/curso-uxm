@@ -120,9 +120,9 @@
             </div>
             <div class="row pt-3">
                 <div class="alert alert-primary fw-normal" role="alert">
-                    <i class="bi-info-circle-fill me-2"></i>Una vez efectúes tu pago, por favor llena el formulario en
-                    el paso 2 para compartirnos la dirección de correo electrónico donde quieres recibir la información
-                    del curso.
+                    <i class="bi-info-circle-fill me-2"></i>Una vez efectúes tu pago y completes tu registro, recibirás
+                    un correo de bienvenida con todos los pasos siguientes para que aproveches al máximo nuestro
+                    programa de UXM – Gestión de Proyectos de UX.
                 </div>
 
             </div>
@@ -138,7 +138,7 @@
                 <!-- PAGO START -->
                 <div class="col-lg-6">
                     <div class="row pb-4">
-                        <h1 class="lh-1 mb-5">1. Método de Pago</h1>
+                        <h1 class="lh-1 mb-5">Paso 1: Realiza tu pago</h1>
 
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -147,7 +147,7 @@
                                     aria-selected="true">Bolivia</button>
                                 <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                                    aria-selected="false">Internacional</button>
+                                    aria-selected="false">Otros Países</button>
 
                             </div>
                         </nav>
@@ -155,15 +155,16 @@
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                 aria-labelledby="nav-home-tab" tabindex="0">
 
-                                <h5 class="pt-5">Instrucciones de pago</h5>
-                                <p class="fw-normal">Si etas afuera de Bolivia, por favor usa el método de pago
-                                    internacional.</p>
+                                <h5 class="pt-5">Instrucciones de pago con QR</h5>
+
                                 <ol class="py-3 fw-normal">
-                                    <li>Debes tener abierta la aplicación de tu banco.
+                                    <li>Debes tener abierta la app de tu banco.
                                     </li>
-                                    <li>Selecciona la forma de pago QR simple.
+                                    <li>Selecciona la forma de pago "QR Simple" en app de tu banco.
                                     </li>
                                     <li>Captura el código QR con la cámara o descarga la imagen.
+                                    </li>
+                                    <li>Completa el pago desde la app de tu banco.
                                     </li>
                                 </ol>
 
@@ -183,10 +184,12 @@
 
                                         <div class="col">
 
-                                            <i class="bi-exclamation-circle-fill text-white me-2"></i></br>
-                                            <p class="text-white fw-normal">Mantén esta página abierta, para que puedas
-                                                ver la
-                                                confirmación del pago realizado exitosamente.</p>
+                                            <button type="submit" value="submit"
+                                                class="btn btn-primary  btn-md rounded-pill mb-2 mb-lg-0 px-5">
+                                                <span class="align-items-center">Descargar QR&nbsp;</span>
+                                                <i class="bi-download me-2"></i>
+                                                </span>
+                                            </button>
                                         </div>
 
                                     </div>
@@ -201,7 +204,7 @@
                                 <div
                                     class="container bg-dark rounded-3 pt-2 align-items-center align-self-center d-sm-block d-xs-block d-md-none d-lg-none d-xl-none">
                                     <div class="row align-items-center">
-                                        <div class="col p-4 d-flex ">
+                                        <div class="col p-4 d-flex">
 
                                             <img class="img-fluid pe-3" src="images/Codigo-QR-UXM.png"
                                                 alt="Codigo QR de Pago para curso de UXM" />
@@ -210,13 +213,16 @@
 
                                     </div>
 
-                                    <div class="row">
+                                    <div class="row pb-3">
                                         <div class="col d-flex">
 
-                                            <i class="bi-exclamation-circle-fill text-white me-2"></i></br>
-                                            <p class="text-white">Mantén esta página abierta, para que puedas
-                                                ver la
-                                                confirmación del pago realizado exitosamente.</p>
+                                            <button type="submit" value="submit"
+                                                class="btn btn-primary  btn-lg rounded-pill mb-2 mb-lg-0 px-5">
+                                                <span class="align-items-center">Descargar QR&nbsp;</span>
+                                                <i class="bi-download me-2"></i>
+                                                </span>
+                                            </button>
+
                                         </div>
                                     </div>
                                 </div>
@@ -248,7 +254,7 @@
                 <!-- Contact Form START -->
                 <div class="col-lg-6">
                     <div class="row">
-                        <h1 class="lh-1 mb-5">2. Información del participante</h1>
+                        <h1 class="lh-1 mb-5">Paso 2: Completa tu registro</h1>
                     </div>
                     <form action="https://formspree.io/f/xdobrjjw" method="post">
                         <!--Lenguaje de mensaje de confirmacion -->
@@ -271,7 +277,7 @@
 
                             <label for="Pais" class="pb-2 pt-4">País</label>
                             <select class="form-select form-control" name="Pais" aria-label="País">
-                                <option selected>Seleciona tu país</option>
+                                <option selected>Selecciona tu país</option>
                                 <option value="AF">Afganistán</option>
                                 <option value="AX">Islas Aland</option>
                                 <option value="AL">Albania</option>
