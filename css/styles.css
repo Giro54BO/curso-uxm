@@ -2446,9 +2446,11 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: #949bf8;
+  color: #212529;
+  background-color: #fff;
+  border-color: black;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(41, 55, 240, 0.25);
+  box-shadow: 0 0 0 0.25rem rgb(253 238 23 / 83%);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -11821,4 +11823,17 @@ background: linear-gradient(360deg, rgba(253,238,23,1) 0%, rgba(255,255,255,1) 1
  .btn-floating:hover {
   opacity: 90%;
  
+  }
+
+  /* Phone Number CSS Intput Field */
+  .form-control.no-arrow {
+    -moz-appearance: textfield;
+  }
+  .no-arrow::-webkit-inner-spin-button {
+    display: none;
+  }
+  .no-arrow::-webkit-outer-spin-button,
+  .no-arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
