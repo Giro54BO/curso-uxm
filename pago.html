@@ -179,10 +179,15 @@
                 <h2 class="mb-1 fw-normal">Gestión de Proyectos de UX</h2>
             </div>
             <div class="row pt-3">
-                <div class="alert alert-primary fw-normal" role="alert">
-                    <i class="bi-info-circle-fill me-2"></i>Una vez efectúes tu pago y completes tu registro, recibirás
-                    un correo de bienvenida con todos los pasos siguientes para que aproveches al máximo nuestro
-                    programa de UXM – Gestión de Proyectos de UX.
+                <div class="d-flex alert alert-info fw-normal" role="alert">
+                    <div>
+                        <i class="bi-info-circle-fill me-2"></i>
+                    </div>
+                    <div>
+                        Una vez efectúes tu pago y completes tu registro, recibirás
+                        un correo de bienvenida con todos los pasos siguientes para que aproveches al máximo nuestro
+                        programa de UXM &#8212; Gestión de Proyectos de UX.
+                    </div>
                 </div>
 
             </div>
@@ -237,14 +242,14 @@
                                     <div class="row align-items-center">
                                         <div class="col p-4">
 
-                                            <img class="img-fluid" src="images/Codigo-QR-UXM.png"
+                                            <img class="img-fluid" src="images/Codigo-QR-UXM-Descuento.png"
                                                 alt="Codigo QR de Pago para curso de UXM" />
 
                                         </div>
 
                                         <div class="col">
 
-                                            <a href="/images/Codigo-QR-UXM.png" type="button" target="_blank"
+                                            <a href="/images/Codigo-QR-UXM-Descuento.png" type="button" target="_blank"
                                                 rel="noopener noreferrer" role="button" aria-pressed="true" download
                                                 class="btn btn-primary rounded-pill btn-lg my-lg-4  mb-md-2">
                                                 <span class="align-items-center" download>Descargar QR&nbsp;</span>
@@ -267,7 +272,7 @@
                                     <div class="row align-items-center">
                                         <div class="col p-4 d-flex justify-content-center">
 
-                                            <img class="img-fluid" src="images/Codigo-QR-UXM.png"
+                                            <img class="img-fluid" src="images/Codigo-QR-UXM-Descuento.png"
                                                 alt="Codigo QR de Pago para curso de UXM" />
 
                                         </div>
@@ -277,7 +282,7 @@
                                     <div class="row pb-3">
                                         <div class="col d-flex justify-content-center">
 
-                                            <a download="Codigo-QR-UXM.png" href="images/Codigo-QR-UXM.png"
+                                            <a download="Codigo-QR-UXM.png" href="images/Codigo-QR-UXM-Descuento.png"
                                                 title="CodigoQR" target="_blank" rel="noopener noreferrer"
                                                 class="btn btn-primary btn-lg  btn-block  mb-3 mb-lg-0 px-4"
                                                 role="button" aria-pressed="true" download>
@@ -748,7 +753,7 @@
 
                 createOrder: function (data, actions) {
                     return actions.order.create({
-                        purchase_units: [{ "amount": { "currency_code": "USD", "value": 400 } }]
+                        purchase_units: [{ "amount": { "currency_code": "USD", "value": 360 } }]
                     });
                 },
 
