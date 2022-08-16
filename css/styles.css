@@ -3085,9 +3085,9 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem black;
 }
 .btn-primary:disabled, .btn-primary.disabled {
-  color: #fff;
-  background-color: #2937f0;
-  border-color: #2937f0;
+  color: #7B8BA3;
+  background-color: #D3D8E0;
+  border-color: #D3D8E0;
 }
 
 .btn-secondary {
@@ -3116,9 +3116,9 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem #FDEE17;
 }
 .btn-secondary:disabled, .btn-secondary.disabled {
-  color: #fff;
-  background-color: black;
-  border-color: black;
+  color: #7B8BA3;
+  background-color: #f5f5f5;
+  border-color: #7B8BA3;
 }
 
 .btn-success {
